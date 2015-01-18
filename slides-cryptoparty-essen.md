@@ -2,7 +2,9 @@
 
 
 
-## Inhalt und Ablauf
+# Inhalt und Ablauf
+<br />
+
 * Wer wir sind
 * Angebote
 * Sichers surfen
@@ -14,6 +16,40 @@
 
 
 # Wer wir sind
-> “Man is least himself when he talks in his own person. Give him a mask, and he will tell you the truth.” - Oscar Wilde
+
+
+
+# Angebote
+
+
+
+# Sichers surfen
+
+
+
+# Passwörter
+
+
+
+# Emailverschlüsselung
+
+
+## Warum verschlüsseln?
+
+
+<img src="img/postkarte.png">
+
+
+<img src="img/postkarte-markiert.png">
+
+
+<img src="img/weg-einer-email.png">
+
+
+## Wie funktioniert Emailverschlüsselung?
+
+
+<img src="img/offene-schnappschloesser.png">
+
 
 
