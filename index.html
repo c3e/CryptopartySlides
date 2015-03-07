@@ -32,7 +32,6 @@
 	</head>
 
 	<body>
-    <div class="background"></div>
 		<div class="reveal">
 
 			<!-- Any section element inside of this container is displayed as a slide -->
@@ -75,9 +74,9 @@
             <h2>Warum verschlüsseln?</h2>
             <br />
             <ul>
-              <li class="fragment">Ich hab doch nichts zu verbergen</li>
-              <li class="fragment">Postgeheminis?</li>
-              <li class="fragment">Die E-Mail ist doch nur für mich selbst und dem Empfänger</li>
+              <li class="">Ich hab doch nichts zu verbergen</li>
+              <li class="">Postgeheminis?</li>
+              <li class="">Die E-Mail ist doch nur für mich selbst und dem Empfänger</li>
             </ul>
           </section>
 
@@ -87,26 +86,74 @@
           </section>
 
           <section>
-            <img src="img/send_postcard.svg">
-          </section>
-
-          <section>
             <img src="img/way_of_a_postcard.svg">
           </section>
 
           <section>
-            <img src="img/send_postcard_encrypted.svg">
+            <h2>Wie kann nun Bob Alice eine verschlüsselte E-Mail senden?</h2>
+            <img src="img/send_postcard.svg">
           </section>
 
           <section>
-            <h2>Wie funktioniert Emailverschlüsselung?</h2>
-            <img src="img/offene-schnappschloesser.png">
+            <h2>Wie funktioniert E-Mailverschlüsselung?</h2>
+            <br />
+            <ul>
+              <li class="">Basis: schweres Mathematisches Problem (Computer brauchen mehrere Jahre zum knacken)</li>
+              <li class="">Man benötigt ein Schlüsselpaar aus einem</li>
+            </ul>
+            <br />
+            <table class="">
+              <tr>
+                <td style="text-align: center; vertical-align: middle">
+                  <label>privaten Schlüssel</label>
+                  <img src="img/raw/key_00ffff_512.png" style="width: 50%">
+                </td>
+                <td style="text-align: center; vertical-align: middle">
+                  <label>öffentlichen Schlüssel</label>
+                  <img src="img/raw/unlock_00ffff_512.png" style="width: 50%">
+                </td>
+              </tr>
+            </table>
           </section>
 
           <section>
             <img src="img/send_pub_key.svg" />
           </section>
 
+          <section>
+            <img src="img/send_postcard_encrypted.svg">
+          </section>
+
+
+          <section>
+            <h2>Hürden & Stolpersteine</h2>
+            <ul>
+              <li class="">Absender / Empfänger bleiben sichtbar</li>
+              <li class="">Sicherer Schlüsseltausch</li>
+              <li class="">Geheimhaltung des privaten Schlüssels</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Vorteile</h2>
+            <ul>
+              <li class="">Private Kommunikation, z.B. Schutz vor</li>
+                <ul>
+                  <li>dem Provider</li>
+                  <li>dem Staat und Geheimndiensten</li>
+                </ul>
+              <li class="">Wer verschlüsselt kann auch signieren (vor Fälschung schützen)</li>
+              <li class="">Grundrauschen erhöhen</li>
+            </ul>
+          </section>
+
+        </section>
+
+        <section>
+          <h1>Links & Infos</h1>
+          <ul>
+            <li>https://wiki.chaospott.de/</li>
+          </ul>
         </section>
 
       </div>
