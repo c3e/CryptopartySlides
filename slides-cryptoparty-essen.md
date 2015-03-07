@@ -35,12 +35,20 @@
 
 
 ## Warum verschlüsseln?
+<p></p>
+<p class="fragment">- Ich hab doch nichts zu verbergen</p>
+<p class="fragment">- Postgeheminis?</p>
+<p class="fragment">- Die Email ist doch nur für mich selbst und dem Empfänger</p>
 
 
-<img src="img/postkarte.png">
+## Emails sind Postkarten
+<img src="img/postcard.svg">
 
 
-<img src="img/postkarte-markiert.png">
+<img src="img/send_postcard.svg">
+
+
+<img src="img/send_postcard_encrypted.svg">
 
 
 <img src="img/weg-einer-email.png">
