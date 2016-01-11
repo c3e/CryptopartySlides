@@ -4,26 +4,29 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Cryptoparty Essen</title>
+		<title>reveal.js – The HTML Presentation Framework</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/night.css" id="theme">
-		<!-- <link rel="stylesheet" href="css/cryptopartyessen.css" id="theme"> -->
-		<link rel="stylesheet" href="lib/css/font-awesome/css/font-awesome.css">
-		<!-- For syntax highlighting -->
+
+		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<!-- Printing and PDF exports -->
 		<script>
-			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
 
 		<!--[if lt IE 9]>
@@ -32,11 +35,9 @@
 	</head>
 
 	<body>
-		<div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-        <section>
+		<div class="reveal">
+		<section>
           <img src="./img/Chaospott_schwarzer_Rand.svg" style=" width:786px; margin-top:-80px; border:none; background-color:transparent;">
           <aside class="notes">
             Welcome!
@@ -433,16 +434,14 @@
           <i class="fa fa-lock"></i> 01CB 5D67 4100 6A17 2492 739D 4592 4F8A 867E D719
         </section>
 
-      </div>
-
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
+		<script src="js/reveal.js"></script>
 
 		<script>
 
-			// Full list of configuration options available here:
+			// Full list of configuration options available at:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				controls: true,
@@ -450,31 +449,19 @@
 				history: true,
 				center: true,
 
-				// For presentation only
-				multiplex: {
-	        // Example values. Generate your own.
-	        secret: null, // null so the clients do not have control of the master presentation
-	        id: '898648789abe4fe2' // id, obtained from socket.io server
-		    },
-		    
-
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
 				
-		    // Parallax scrolling
 				parallaxBackgroundImage: './img/bg.png',
 				parallaxBackgroundSize: '3000px 2336px',
-				
-				// Optional libraries used to extend on reveal.js
+
+				// Optional reveal.js plugins
 				dependencies: [
 					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
 					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
-        	{ src: 'plugin/multiplex/client.js', async: true }
-
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
 				]
 			});
 
